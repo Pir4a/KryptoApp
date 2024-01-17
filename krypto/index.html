@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+
+   <title>Krypto app</title>
+    </head>
+    <body class="bg-gradient-to-b  from-indigo-950 via-indigo-950 to-purple-950 font-[Tektur] scroll-smooth">
+    <header class="font-[Tektur]">
+      <nav id="main-nav" class="text-xl header-container bg-indigo-950
+       fixed top-0 w-full shadow flex justify-between items-center">
+        <div class="header-nav bg-indigo-950 max-w-screen-2xl mx-auto p-8 flex items-center justify-between w-full lg:h-28">
+          <div class="logo-left">
+            <a href="home" class="flex>"><img class="w-16 lg-inline lg:mr-4" src="./assets/krypto.png" alt=""/>
+            </a>
+          </div>   
+          <div class="relative flex justify-center items-center">
+            <div class="absolute w-12 inset-0 rounded-lg leading-none bg-gradient-to-r from-violet-900 to-purple-700 right-0.5 blur-sm"></div>
+            <button aria-label="toggle button"
+             aria-expanded="false"
+             id="menu-btn" 
+             class="cursor-pointer relative w-12  lg:hidden flex items-center justify-center rounded-lg divide-x gap-1 leading-none">
+              <img src="assets/burger.svg" class="h-3/4" alt="">
+            </button></div>
+            <ul id="toggled-menu" class=" w-full bg-gradient-to-b from-indigo-950 via-indigo-950 to-purple-950 lg:bg-gradient-to-b lg:from-transparent absolute top-full left-0 -translate-y-full -z-10 text-white border-b border-pink-600 lg:border-indigo-950 hidden lg:flex
+            flex-col items-center lg:static lg:z-10 lg:w-min lg:transform-none lg:border-none lg:flex-row gap-8 origin-top lg:mx-auto animate-open-menu">
+            <li class="py-4 lg:py-0 lg:mr-6 lg:px-2 cursor-pointer lg:w-24 hover:text-violet-600"><a href="#home" class="">Home</a></li>
+            <li class="py-4 lg:py-0 lg:mr-6 lg:px-2 cursor-pointer lg:w-24 hover:text-violet-600"><a href="#market">Market</a></li>
+            <li class="py-4 lg:py-0 lg:mr-6 lg:px-2 cursor-pointer lg:w-24 hover:text-violet-600"><a href="#chose">Why Us</a></li>
+            <li class="py-4 lg:py-0 lg:mr-6 lg:px-2 cursor-pointer lg:w-24 hover:text-violet-600"><a href="#socials">Socials</a></li>
+            <ul class="lg:hidden items-center justify-center flex flex-col gap-y-6 text-white">
+              <li><button>Log in</button></li>
+              <li class="py-4"><button>Sign up</button></li>
+            </ul>
+          </ul>
+              <ul class=" hidden lg:flex items-center justify-center flex-col gap-3 lg:flex-row lg:gap-6 text-white">
+                <li><button>Log in</button></li>
+                <li>/</li>
+                <li><button>Sign up</button></li>
+              </ul>
+            
+      </div>
+    </nav>
+  </header>
+  <hero class="h-svh">
+    <div class="hero-container flex flex-col items-center justify-center h-svh text-white  text-4xl lg:text-7xl xl::text-9xl text-center my-6 gap-y-10" id="home">
+
+      
+      <h1>TRADE<br/><span class=" -z-20 bg-clip-text text-transparent bg-gradient-to-tr from-indigo-600 via-fuchsia-700 to-purple-700 font-extrabold relative">
+        <img src="assets/btclogo.png" class="hidden lg:block lg:top-0 lg:absolute lg:w-24 lg:h-24 -left-24 animate-bounce" alt=""/>
+        <img src="assets/croppedxrp.png" class="hidden lg:block lg:top-0 lg:absolute lg:w-24 lg:h-24 lg:-right-24 xl:-right-24 animate-bounce" alt=""/>
+          CRYPTO CURRENCIES   
+        </span></h1>
+      <div class="coins font-normal text-sm grid-cols-2 gap-x-7 gap-y-12 lg:text-xl lg:gap-x-12 xl:text-xl 2xl:text-2xl grid xl:grid-cols-4 xl:gap-x-28 xl:my-12" id="coins">
+        <div class="flex flex-col justify-center items-center " id='bitcoin'><img class="xl:w-20 xl:h-20 w-10 h-10 lg:w-12 lg:h-12" src="assets/btc.png"/></div>
+        <div class="eth flex flex-col justify-center items-center " id='eth'><img class="xl:w-20 xl:h-20 w-10 h-10 lg:w-12 lg:h-12" src="assets/ETH.png"/></div>
+        <div class="idk flex flex-col justify-center items-center" id="cryptothird"><img class="xl:w-20 xl:h-20 w-10 h-10 lg:w-12 lg:h-12" src="assets/Tether-USDT-icon.png"/></div>
+        <div class="idkk flex flex-col justify-center items-center" id="cryptofourth"><img class="xl:w-20 xl:h-20 w-10 h-10 lg:w-12 lg:h-12" src="assets/xrplogo.png"/></div>
+      </div>
+      </div>
+    </div>
+  </hero>
+  <div class="firstscroll flex justify-center">
+  <div class="market w-full flex items-center justify-center">
+    <div class="titlecontainer flex justify-start flex-col items-start 2xl:w-8/12 gap-y-5 "><h1 class="text-lg lg:text-3xl xl:text-5xl text-white" id="market">Real-Time Market Updates</h1>
+      <div class="gradientcontainer w-svw lg:w-full grid grid-cols-3 lg:grid-cols-4 text-sm lg:text-3xl xl:text-5xl mx-auto bg-gradient-to-tr from-indigo-600 via-fuchsia-700 to-purple-700 rounded-t-md">
+        <span>Coin</span><span>Price</span><span class="hidden lg:block">MarketCap</span><span>%24h</span></div>
+      <div class=" gap-y-7 lg:gap-y-24 lg:py-12 py-2 marketcontainer w-svw lg:w-full grid grid-cols-1 lg:grid-cols-1 text-xs lg:text-2xl xl:text-4xl mx-auto" id="marketcontainer">
+          
+    </div>
+    <div class="buttons flex justify-center gap-x-5 xl:gap-x-10 xl:text-4xl w-full ">
+    <button class="bg-white w-1/4 lg:w-16 h-10 lg:h-16 rounded-full focus:bg-gradient-to-br from-violet-900 to-fuchsia-900 shadow-lg shadow-fuchsia-700" id="btn1">1</button>
+    <button class="bg-white w-1/4 lg:w-16 h-10 lg:h-16 rounded-full focus:bg-gradient-to-br from-violet-900 to-fuchsia-900 shadow-lg shadow-fuchsia-700" id="btn2">2</button>
+    <button class="bg-white w-1/4 lg:w-16 h-10 lg:h-16 rounded-full focus:bg-gradient-to-br from-violet-900 to-fuchsia-900 shadow-lg shadow-fuchsia-700" id="btn3">3</button>
+    <button class="hidden lg:block bg-white w-16  lg:h-16 rounded-full focus:bg-gradient-to-br from-violet-900 to-fuchsia-900 shadow-lg shadow-fuchsia-700" id="btn4">4</button>
+    <button class="hidden lg:block bg-white w-16  lg:h-16 rounded-full focus:bg-gradient-to-br from-violet-900 to-fuchsia-900 shadow-lg shadow-fuchsia-700" id="btn5">5</button>
+   </div>
+</div>
+  </div>
+  
+</div>
+<div class="mt-20 text-3xl" id="chose">
+  <div class="flex justify-center" id="">
+    <h1 class="xl:mt-28 xl:text-9xl bg-clip-text text-transparent bg-gradient-to-tr from-indigo-950 via-fuchsia-800 to-purple-900">Why us ?</h1>
+  </div>
+  <div class="">
+
+  </div>
+
+</div>
+  </body>
+  <script type="module" src="/main.js"></script>
+</html>
