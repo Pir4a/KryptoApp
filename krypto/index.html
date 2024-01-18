@@ -11,11 +11,11 @@
 
    <title>Krypto app</title>
     </head>
-    <body class="bg-gradient-to-b  from-indigo-950 via-indigo-950 to-purple-950 font-[Tektur] scroll-smooth">
+    <body class="bg-gradient-to-b  from-deepblue via-deepviolet to-purple-950 font-[Tektur] scroll-smooth">
     <header class="font-[Tektur]">
-      <nav id="main-nav" class="text-xl header-container bg-indigo-950
+      <nav id="main-nav" class="text-xl header-container bg-deepblue
        fixed top-0 w-full shadow flex justify-between items-center z-50">
-        <div class="header-nav bg-indigo-950 max-w-screen-2xl mx-auto p-8 flex items-center justify-between w-full lg:h-28">
+        <div class="header-nav bg-deepblue max-w-screen-2xl mx-auto p-8 flex items-center justify-between w-full lg:h-28">
           <div class="logo-left">
             <a href="home" class="flex>"><img class="w-16 lg-inline lg:mr-4" src="./assets/krypto.png" alt=""/>
             </a>
@@ -25,10 +25,10 @@
             <button aria-label="toggle button"
              aria-expanded="false"
              id="menu-btn" 
-             class="cursor-pointer relative w-12  lg:hidden flex items-center justify-center rounded-lg divide-x gap-1 leading-none">
+             class="cursor-pointer relative w-12  lg:hidden flex items-center justify-center rounded-lg  gap-1 leading-none">
               <img src="assets/burger.svg" class="h-3/4" alt="">
             </button></div>
-            <ul id="toggled-menu" class=" w-full bg-gradient-to-b from-indigo-950 via-indigo-950 to-purple-950 lg:bg-gradient-to-b lg:from-transparent absolute top-full left-0 -translate-y-full -z-10 text-white border-b border-pink-600 lg:border-indigo-950 hidden lg:flex
+            <ul id="toggled-menu" class=" w-full bg-gradient-to-b from-deepblue to-violet-900 lg:bg-gradient-to-b lg:from-transparent absolute top-full left-0 -translate-y-full -z-10 text-white border-b border-pink-600 lg:border-indigo-950 hidden lg:flex
             flex-col items-center lg:static lg:z-10 lg:w-min lg:transform-none lg:border-none lg:flex-row gap-8 origin-top lg:mx-auto animate-open-menu">
             <li class="py-4 lg:py-0 lg:mr-6 lg:px-2 cursor-pointer lg:w-24 hover:text-violet-600"><a href="#home" class="">Home</a></li>
             <li class="py-4 lg:py-0 lg:mr-6 lg:px-2 cursor-pointer lg:w-24 hover:text-violet-600"><a href="#market">Market</a></li>
@@ -69,9 +69,9 @@
   <div class="firstscroll flex justify-center">
   <div class="market w-full flex items-center justify-center">
     <div class="titlecontainer flex justify-start flex-col items-start 2xl:w-8/12 gap-y-5 "><h1 class="text-lg lg:text-3xl xl:text-5xl text-white" id="market">Real-Time Market Updates</h1>
-      <div class="gradientcontainer w-svw lg:w-full grid grid-cols-3 lg:grid-cols-4 text-sm lg:text-3xl xl:text-5xl mx-auto bg-gradient-to-tr from-indigo-600 via-fuchsia-700 to-purple-700 rounded-t-md">
+      <div class="gradientcontainer w-svw lg:w-full grid grid-cols-3 lg:grid-cols-4 text-sm lg:text-3xl xl:text-5xl mx-auto bg-gradient-to-tr from-indigo-600 via-fuchsia-700 to-purple-700 rounded-t-md text-center text-slate-200">
         <span>Coin</span><span>Price</span><span class="hidden lg:block">MarketCap</span><span>%24h</span></div>
-      <div class=" gap-y-7 lg:gap-y-24 lg:py-12 py-2 marketcontainer w-svw lg:w-full grid grid-cols-1 lg:grid-cols-1 text-xs lg:text-2xl xl:text-4xl mx-auto" id="marketcontainer">
+      <div class=" gap-y-7 lg:gap-y-12 lg:py-12 py-2 marketcontainer w-svw lg:w-full grid grid-cols-1 lg:grid-cols-1 text-xs lg:text-2xl xl:text-4xl mx-auto text-center" id="marketcontainer">
           
     </div>
     <div class="buttons flex justify-center gap-x-5 xl:gap-x-10 xl:text-4xl w-full ">
@@ -87,54 +87,77 @@
 </div>
 <div class="mt-20 text-3xl flex justify-center items-center flex-col" id="chose">
   <div class="flex justify-center" id="">
-    <h1 class="xl:mt-28 xl:text-9xl bg-clip-text text-transparent bg-gradient-to-tr from-indigo-950 via-fuchsia-800 to-purple-900">Why us ?</h1>
+    <h1 class="font-bold xl:mt-28 xl:text-9xl lg:text-6xl lg:mt-20 bg-clip-text text-transparent bg-gradient-to-tr from-purple-800 via-fuchsia-800 to-purple-900">Why us ?</h1>
   </div>
-  <div class="cardcontainer text-sm flex flex-col gap-y-7 justify-center items-center xl:grid xl:grid-rows-3 xl:grid-cols-3 xl:w-4/5">
-    <div class="card relative group flex items-center justify-center"><div class=" absolute left-1/4 -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
-      blur-xl opacity-75 group-hover:opacity-100 transition duration-100 group-hover:duration-200 w-1/2">
+  <div class="cardcontainer text-sm flex flex-col gap-y-7 justify-center items-center lg:grid lg:grid-rows-3 lg:grid-cols-3 lg:w-4/5 mt-10 lg:mt-24">
+    <div class="card relative group flex items-center justify-center"><div class="absolute -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
+      blur-xl opacity-25 group-hover:opacity-45 transition duration-100 group-hover:duration-200">
     </div>
-    <span class="text-white bg-slate-950 relative rounded-lg leading-none divide-x divide-gray-600 border-2 border-white w-1/2 text-center">
-      <h2 class="text-sm font-bold">SECURE TRANSACTIONS</h2><p class="text-xs">Robust encryption ensures your crypto transactions are secure, protecting your assets from unauthorized access.</p>
+    <span class="text-white bg-slate-950 relative rounded-lg leading-none  w-4/5 divide-gray-600 border-opacity-45 p-4 border-2 border-white text-center">
+      <h2 class="text-sm xl:text-3xl font-bold">SECURE TRANSACTIONS</h2><p class="text-xs xl:text-xl mt-2">Robust encryption ensures your crypto transactions are secure, protecting your assets from unauthorized access.</p>
     </span>
   </div>
-  <div class="card relative group flex items-center justify-center"><div class="absolute left-1/4 -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
-    blur-xl opacity-75 group-hover:opacity-100 transition duration-100 group-hover:duration-200 w-1/2">
+  <div class="row-span-full col-start-2 hidden lg:block z-20"><img src="./assets/handbtc.png" class="rounded-xl hidden lg:block"/></div>
+  <div class="card relative group flex items-center justify-center"><div class="absolute -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
+    blur-xl opacity-25 group-hover:opacity-45 transition duration-100 group-hover:duration-200">
   </div>
-  <span class="text-white bg-slate-950 relative rounded-lg leading-none divide-x divide-gray-600 border-2 border-white w-1/2 text-center">
-    <h2 class="text-sm font-bold">USER-FRIENDLY INTERFACE</h2><p class="text-xs">User-friendly interface designed for seamless navigation, making crypto trading accessible for beginners and experts alike.</p>
+  <span class="text-white bg-slate-950 relative rounded-lg leading-none  w-4/5 divide-gray-600 border-opacity-45 p-4 border-2 border-white text-center ">
+    <h2 class="text-sm xl:text-3xl font-bold">USER-FRIENDLY INTERFACE</h2><p class="text-xs xl:text-xl mt-2">User-friendly interface designed for making crypto trading accessible for beginners and experts alike.</p>
   </span>
 </div>
-<div class="card relative group flex items-center justify-center"><div class="absolute left-1/4 -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
-  blur-xl opacity-75 group-hover:opacity-100 transition duration-100 group-hover:duration-200 w-1/2">
+<div class="card relative group flex items-center justify-center"><div class="absolute -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
+  blur-xl opacity-25 group-hover:opacity-45 transition duration-100 group-hover:duration-200">
 </div>
-<span class="text-white bg-slate-950 relative rounded-lg leading-none divide-x divide-gray-600 border-2 border-white w-1/2 text-center">
-  <h2 class="text-sm font-bold">REAL-TIME ANALYTICS</h2><p class="text-xs">Stay ahead with real-time market analytics, empowering you with the latest data to make informed trading decisions.</p>
+<span class="text-white bg-slate-950 relative rounded-lg leading-none w-4/5 divide-gray-600 border-opacity-45 p-4 border-2 border-white text-center">
+  <h2 class="text-sm xl:text-3xl font-bold">REAL-TIME ANALYTICS</h2><p class="text-xs xl:text-xl mt-2">Stay ahead with real-time market analytics, empowering you with the latest data to make informed trading decisions.</p>
 </span>
 </div>
-<div class="card relative group flex items-center justify-center"><div class="absolute left-1/4 -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
-  blur-xl opacity-75 group-hover:opacity-100 transition duration-100 group-hover:duration-200 w-1/2">
+<div class="card relative group flex items-center justify-center"><div class="absolute -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
+  blur-xl opacity-25 group-hover:opacity-45 transition duration-100 group-hover:duration-200">
 </div>
-<span class="text-white bg-slate-950 relative rounded-lg leading-none divide-x divide-gray-600 border-2 border-white w-1/2  text-center row-start-1 row-end-3">
-  <h2 class="text-sm font-bold">LOW TRANSACTION FEES</h2><p class="text-xs">Enjoy competitive and transparent fees, maximizing your profits without compromising on the quality of service.</p>
+<span class="text-white bg-slate-950 relative rounded-lg leading-none  w-4/5 divide-gray-600 border-opacity-45 p-4 border-2 border-white text-center row-start-1 row-end-3">
+  <h2 class="text-sm xl:text-3xl font-bold">LOW TRANSACTION FEES</h2><p class="text-xs xl:text-xl mt-2">Enjoy competitive and transparent fees, maximizing your profits without compromising on the quality of service.</p>
 </span>
 </div>
-<div class="card relative group flex items-center justify-center"><div class="absolute left-1/4 -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
-  blur-xl opacity-75 group-hover:opacity-100 transition duration-100 group-hover:duration-200 w-1/2">
+<div class="card relative group flex items-center justify-center"><div class="absolute -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
+  blur-xl opacity-25 group-hover:opacity-45 transition duration-100 group-hover:duration-200">
 </div>
-<span class="text-white bg-slate-950 relative rounded-lg leading-none divide-x divide-gray-600 border-2 border-white w-1/2  text-center row-start-3 col-start-3">
-  <h2 class="text-sm font-bold">24/7 CUSTOMER SUPPORT</h2><p class="text-xs">Our dedicated support team is available 24/7 to assist you, ensuring a smooth and hassle-free crypto trading experience.</p>
+<span class="text-white bg-slate-950 relative rounded-lg leading-none  w-4/5 divide-gray-600 border-opacity-45 p-4 border-2 border-white text-center row-start-3 col-start-3">
+  <h2 class="text-sm xl:text-3xl font-bold">24/7 CUSTOMER SUPPORT</h2><p class="text-xs xl:text-xl mt-2">Our dedicated support team is available 24/7 to assist you, ensuring a smooth crypto trading experience.</p>
 </span>
 </div>
-<div class="card relative group flex items-center justify-center"><div class="absolute left-1/4 -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
-  blur-xl opacity-75 group-hover:opacity-100 transition duration-100 group-hover:duration-200 w-1/2">
+<div class="card relative group flex items-center justify-center"><div class="absolute -inset-1 bg-gradient-to-r from-fuchsia-700 via-fuchsia-600 to-fuchsia-500 rounded-lg
+  blur-xl opacity-25 group-hover:opacity-45 transition duration-100 group-hover:duration-200">
 </div>
-<span class="text-white bg-slate-950 relative rounded-lg leading-none divide-x divide-gray-600 border-2 border-white w-1/2 text-center">
-  <h2 class="text-sm font-bold">GLOBAL ACCESSIBILITY</h2><p class="text-xs">Access your crypto assets anytime, anywhere. Our platform provides global accessibility, supporting traders around the world.</p>
+<span class="text-white bg-slate-950 relative rounded-lg leading-none  w-4/5 divide-gray-600 bborder-opacity-45 p-4 border-2 border-white text-center">
+  <h2 class="text-sm xl:text-3xl font-bold">GLOBAL ACCESSIBILITY</h2><p class="text-xs xl:text-xl mt-2">Access your crypto assets anytime, anywhere. Our platform provides global accessibility, supporting traders around the world.</p>
 </span>
-</div>
+  </div>
 
+  </div>
 </div>
+<div class="mt-20 text-3xl flex justify-center items-center flex-col" id="socials">
+  <div class="flex flex-col items-center justify-center text-center w-1/2 relative" id="">
+    
+    <h1 class="font-bold xl:mt-28 xl:text-8xl text-white">JOIN US VIA
+       <span id="discordtext" class="bg-clip-text text-transparent bg-gradient-to-b from-blue-500 to-blue-600 cursor-pointer"><a href="https://www.discord.com" target="_blank">DISCORD</a></span>
+    </h1>
+    <img id="discordimg" src="assets/Discord_Logo_sans_texte.svg.png" class="w-1/6 animate-rotate-y animate-infinite animate-duration-[3000ms]
+     animate-delay-[10ms] animate-ease-linear animate-fill-forwards"/>
+  </div>
 </div>
+<footer>
+  <div class="mt-20 text-3xl flex justify-center items-center text-white gap-x-6" id="socials">
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path><path d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3"></path><path d="M7 16.5c3.5 1 6.5 1 10 0"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="footer-icon"><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"></path><path d="M10 9l5 3l-5 3z"></path></svg>
+  </div>
+  <div class="text-md flex justify-center items-center text-white gap-x-6 mt-5">
+    <p>Priavacy</p>
+    <p>Terms of use</p>
+  </div>
+</footer>
   </body>
   <script type="module" src="/main.js"></script>
 </html>

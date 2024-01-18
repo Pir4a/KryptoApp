@@ -18,9 +18,16 @@ export default {
       },
       animation: {
         "open-menu": 'open-menu 0.35s ease-in-out forwards', 
-      }
+      },
+      colors: {
+        deepviolet:"#10061E",
+        deepblue:"#13074A"
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
+
 }
 

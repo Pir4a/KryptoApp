@@ -4,6 +4,8 @@ const toggleMenuBtn = document.querySelector("#menu-btn")
 const toggleMenuImg = document.querySelector("#menu-btn img")
 const toggledMenu = document.querySelector("#toggled-menu")
 const menuLinks = document.querySelector("#main-nav ul a")
+const discordtext = document.querySelector("#discordtext")
+const discordimg = document.querySelector("#discordimg")
 
 toggleMenuBtn.addEventListener("click",toggleNav);
 
@@ -68,7 +70,7 @@ function tendigitsmarketcap(index){
 function marketupdate(a,b,c){
   
   for (a=b; a<c; a++){
-marketcontainer.innerHTML+=`<div class="border-b text-stone-300 border-white gap-y-5 lg:gap-y-2 lg:py-4 py-2 marketcontainer w-svw lg:w-full grid grid-cols-3 lg:grid-cols-4 text-xs lg:text-2xl xl:text-4xl mx-auto"><span class="">${x1.data[a].name}</span><span>${tendigits(a)}</span><span class="hidden lg:block">${tendigitsmarketcap(a)}</span>${greenorred(a,marketcontainer)}</div>`
+marketcontainer.innerHTML+=`<div class="border-b text-stone-300 border-white gap-y-5 lg:gap-y-2 lg:py-4 py-2 marketcontainer w-svw lg:w-full grid grid-cols-3 lg:grid-cols-4 text-xs lg:text-2xl xl:text-3xl mx-auto"><span class="">${x1.data[a].name}</span><span>${tendigits(a)}</span><span class="hidden lg:block">${tendigitsmarketcap(a)}</span>${greenorred(a,marketcontainer)}</div>`
 }}
 
 function newpage(a,b,c){
